@@ -4,9 +4,13 @@ import './App.css'
 
 function App() {
   const [name, setName] = useState("julio");
-  const actulizar = ()=> {
-    setName();
+
+  const actulizar = (e)=> {
+    const valor = e.target.value;
+    setName(valor);
+    console.log(name);
   }
+  
 
   return (
     <div className="App">
